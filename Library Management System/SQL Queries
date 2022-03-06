@@ -1,0 +1,31 @@
+create database library;
+use library;
+create table books(
+    s_no int,
+    book_name varchar(50),
+    author_name varchar(50),
+    bcode int primary key,
+    total int
+);
+select * from books order by s_no;
+
+create table issue(
+    name varchar(50),
+    reg_no varchar(10),
+    bcode int,
+    date_issued date
+);
+select * from issue order by date_issued;
+
+create table submit(
+    name varchar(50),
+    reg_no varchar(10),
+    bcode int,
+    date_submitted date
+);
+select * from submit order by date_;
+
+show tables;
+
+
+#sql queries link popsql- https://app.popsql.com/queries/-MxQ4HJw0vchfTQrDecm/library-management-system-mar-5-2022
