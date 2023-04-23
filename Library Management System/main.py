@@ -3,9 +3,9 @@ import mysql.connector,random,time,sys
 
 con=mysql.connector.connect(host="localhost",user="root",passwd="fopnigsql",database="library")
 c=con.cursor()
-ps_chance=0
+ps_chance = 0
 
-def add_b():
+def add_b() : #add books
     s_no=int(input("Enter Serial no: "))
     bn=input("Enter Book Name: ")
     a=input("Enter Author's Name: ")
