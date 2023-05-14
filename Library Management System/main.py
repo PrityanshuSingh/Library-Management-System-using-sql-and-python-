@@ -5,8 +5,8 @@ con=mysql.connector.connect(host="localhost",user="root",passwd="fopnigsql",data
 c=con.cursor()
 ps_chance = 0
 
-def add_b() : #add books to function
-    s_no=int(input("Enter Serial no: "))
+def add_b() : # add books to function 
+    s_no=int(input("Enter Serial no: " ))
     bn=input("Enter Book Name: ")
     a=input("Enter Author's Name: ")
     t=input("Enter number of books to be added: ")
