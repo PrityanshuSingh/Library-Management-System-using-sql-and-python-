@@ -5,7 +5,7 @@ con=mysql.connector.connect(host="localhost",user="root",passwd="fopnigsql",data
 c=con.cursor()
 ps_chance = 0
 
-def add_b() : #add books
+def add_b() : #add books to function
     s_no=int(input("Enter Serial no: "))
     bn=input("Enter Book Name: ")
     a=input("Enter Author's Name: ")
@@ -13,7 +13,7 @@ def add_b() : #add books
     ch=random.randint(100000,999999)
     print("6-digit Code for the \""+bn+"\" : ",ch)
 
-    data=(s_no,bn,a,ch,t)
+    data=( s_no,bn,a,ch,t )
     sql="insert into books values(%s,%s,%s,%s,%s)"
     c.execute(sql,data)
     update=input("\nPress enter to update data: ")
